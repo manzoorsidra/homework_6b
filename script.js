@@ -8,26 +8,27 @@ if(cartBtnAvailable){
   cartBtnAvailable.addEventListener('click', function(){
 
 //------------For 6B - Capturing radio button form selections-----------------------
-//     const rbs = document.querySelectorAll('input[name="glaze_flavor"]');
-//     const rbs2 = document.querySelectorAll('input[name="quantity"]');
+    const rbs = document.querySelectorAll('input[name="glaze_flavor"]');
+    const rbs2 = document.querySelectorAll('input[name="quantity"]');
 
-//     let selectedValue1;
-//     let selectedValue2;
+    let glazeSelectedValue;
+    let quantitySelectedValue;
 
-//     for (const rb of rbs) {
-//         if (rb.checked) {
-//             selectedValue1 = rb.value;
-//         }
-//     }
+    for (const rb of rbs) {
+        if (rb.checked) {
+            glazeSelectedValue = rb.value;
+        }
+    }
 
-//     for (const rb2 of rbs2) {
-//       if (rb2.checked) {
-//           selectedValue2 = rb2.value;
-//       }
-//   }
-//     var item = [selectedValue1, selectedValue2];
-//     items.push(item);
-//     console.log(items);
+    for (const rb2 of rbs2) {
+      if (rb2.checked) {
+          quantitySelectedValue = rb2.value;
+      }
+  }
+    var item = [glazeSelectedValue, quantitySelectedValue];
+    // items.push(item);
+    console.log("Glaze Selected Value = " + item[0]);
+    console.log("Quantity Selected Value = " + item[1]);
 //------------For 6B - Capturing radio button form selections-----------------------
 
 
