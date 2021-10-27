@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<!-- linking stylesheet to get Inter font -->
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'> 
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+	<header>
+		<nav>
+			<div id="logo">
+				<a href="index.html">
+                    <img 
+                        src="assets/images/Logo.png" 
+                        alt="The Bun Bun Bakeshop logo. 
+                        Clicking this will take you back to the homepage"
+                    >
+                </a>
+			</div>
+			<div id="navtitles">
+				<a href="browseflavors.html">Browse Flavors</a>
+				<a href="#AboutUs">About Us</a>
+				<a href="#ContactUs">Contact Us</a>
+				<a href="#Careers">Careers</a>
+				<a href="#Favorites" class="iconlabels">
+                    <span>
+                        Favorites
+                        <img 
+                            src="assets/icons/favorites.svg" 
+                            alt="heart icon. Clicking this will take you to the favorites page."
+                        >
+                    </span>
+                </a>
+				<a href="cart.html" class="iconlabels cartIconElement">
+					<span>
+						Cart 
+					</span>
+						<div class = "cartIcon">
+							<img 
+								src="assets/icons/cart.svg" 
+								alt="shopping cart icon. Clicking this will 
+								take you to the cart page."
+							>
+							<div class = "cartNumberDiv">
+								<span  class= "disp" id="cartCounter4" >0</span>
+							</div>
+						</div>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+<!-- Content of the Page -->
+    <div class="pagecontent">
+
+        <div class = "topTitle">
+            <h2 class="pagetitle">Your Cart</h2>
+            <button class="primarybutton checkoutBtn" type="button">Checkout</button>
+        </div>
+
+        <div class="topsection">
+<!-- Items inside the cart -->
+            <div class="cartItems">
+                <!-- Item 1 -->
+                <div class = "cartItem marginItem">
+                    <img class = "cartImage" src = "assets/images/noglaze.jpeg" alt="No glaze cinnamon roll">
+                    <div class="cartItemDetails">
+                        <div class = "itemTitle">
+                            <p class = "cartItemName">Original</p>
+                            <div class= "itemIcons">
+                                <img class= "iconlabels" src="assets/icons/favorites.svg" alt="add to favorites">
+                                <img class = "iconlabels" src="assets/icons/delete.svg" alt="delete item">
+                            </div>
+                        </div>
+
+                        <h6 class = "itemPrice">$1.99</h6>
+
+                        <div class = "cartItemDropdowns">
+                            <div class = "dropdownSection  firstDropdown">
+                                <p class="dropdownTitle">Quantity</p>
+                                <div class = "dropdown">
+                                    <p class ="dropdownText ">3</p>
+                                    <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                                </div>
+                            </div>
+                            <div class = "dropdownSection">
+                                <p class="dropdownTitle">Glaze</p>
+                                <div class = "dropdown">
+                                    <p class ="dropdownText">No Glaze</p>
+                                    <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class = "cartItem marginItem">
+                    <img class = "cartImage" src = "assets/images/originaldetail.png" alt="original cinnamon roll">
+                    <div class="cartItemDetails">
+                        <div class = "itemTitle">
+                            <p class = "cartItemName">Original</p>
+                            <div class= "itemIcons">
+                                <img class= "iconlabels" src="assets/icons/favorites.svg" alt="add to favorites">
+                                <img class = "iconlabels" src="assets/icons/delete.svg" alt="delete item">
+                            </div>
+                        </div>
+
+                        <h6 class = "itemPrice">$1.99</h6>
+
+                        <div class = "cartItemDropdowns">
+                            <div class = "dropdownSection  firstDropdown">
+                                <p class="dropdownTitle">Quantity</p>
+                                <div class = "dropdown">
+                                    <p class ="dropdownText ">12</p>
+                                    <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                                </div>
+                            </div>
+                            <div class = "dropdownSection">
+                                <p class="dropdownTitle">Glaze</p>
+                                <div class = "dropdown">
+                                    <p class ="dropdownText">Vanilla Milk</p>
+                                    <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class = "cartItem">
+                    <img class = "cartImage" src = "assets/images/blackberry.png" alt="original cinnamon roll">
+                    <div class="cartItemDetails">
+                        <div class = "itemTitle">
+                            <p class = "cartItemName">Original</p>
+                            <div class= "itemIcons">
+                                <img class= "iconlabels" src="assets/icons/favorites.svg" alt="add to favorites">
+                                <img class = "iconlabels" src="assets/icons/delete.svg" alt="delete item">
+                            </div>
+                        </div>
+
+                        <h6 class = "itemPrice">$1.99</h6>
+
+                        <div class = "cartItemDropdowns">
+                            <div class = "dropdownSection  firstDropdown">
+                                <p class="dropdownTitle">Quantity</p>
+                                <div class = "dropdown">
+                                    <p class ="dropdownText ">6</p>
+                                    <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                                </div>
+                            </div>
+                            <div class = "dropdownSection">
+                                <p class="dropdownTitle">Glaze</p>
+                                <div class = "dropdown">
+                                    <p class ="dropdownText">Double Chocolate</p>
+                                    <img class = "dropdownArrow" src="assets/icons/arrow.svg" alt="dropdown arrow">     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bottom Section: You May Also Like -->
+        <div id="bottomsection">
+            <h4>You May Also Like</h4>
+            <div class="row">
+
+                <!-- pumpkin spice -->
+                <div class="flavorlisting">
+                    <div class="flavorimage">
+                        <a class="flavor" href="flavordetail.html">
+                            <img src="assets/images/pumpkinspice.png" 
+                            alt="pumpkin spice cinnamon roll">
+                        </a>
+                    </div>
+                    <div class="flavortitle">
+                        <h5>Pumpkin Spice</h5>
+                        <h5>$ 2.99</h5>
+                    </div>
+                    <div class="ratings">
+                        <div class="stars">
+                            <img src="assets/images/starpink.svg" alt="4 star rating">
+                            <img src="assets/images/starpink.svg" alt="4 star rating">
+                            <img src="assets/images/starpink.svg" alt="4 star rating">
+                            <img src="assets/images/starpink.svg" alt="4 star rating">
+                            <img src="assets/images/stargrey.svg" alt="4 star rating">
+                        </div>
+                        <h6>219 Ratings</h6>
+                    </div>
+                </div>
+
+                <!-- caramel pecan -->
+                <div class="flavorlisting">
+                    <div class="flavorimage">
+                        <a class="flavor" href="flavordetail.html">
+                            <img 
+                                src="assets/images/caramelpecan.png" 
+                                alt="caramel pecan cinnamon roll"
+                            >
+                        </a>
+                    </div>
+                    <div class="flavortitle">
+                        <h5>Caramel Pecan</h5>
+                        <h5>$ 2.99</h5>
+                    </div>
+                    <div class="ratings">
+                        <div class="stars">
+                            <img src="assets/images/starpink.svg" alt="5 star rating">
+                            <img src="assets/images/starpink.svg" alt="5 star rating">
+                            <img src="assets/images/starpink.svg" alt="5 star rating">
+                            <img src="assets/images/starpink.svg" alt="5 star rating">
+                            <img src="assets/images/starpink.svg" alt="5 star rating">
+                        </div>
+                        <h6>283 Ratings</h6>
+                    </div>
+                </div>
+
+                <!-- Blackberry -->
+                <div class="flavorlisting">
+                    <div class="flavorimage">
+                        <a class="flavor" href="flavordetail.html">
+                            <img 
+                                src="assets/images/blackberry.png" 
+                                alt="blackberry cinnamon roll"
+                            >
+                        </a>
+                    </div>
+                    <div class="flavortitle">
+                        <h5>Blackberry</h5>
+                        <h5>$ 1.99</h5>
+                    </div>
+                    <div class="ratings">
+                        <div class="stars">
+                            <img src="assets/images/starpink.svg" alt="3 star rating">
+                            <img src="assets/images/starpink.svg" alt="3 star rating">
+                            <img src="assets/images/starpink.svg" alt="3 star rating">
+                            <img src="assets/images/stargrey.svg" alt="3 star rating">
+                            <img src="assets/images/stargrey.svg" alt="3 star rating">
+                        </div>
+                        <h6>198 Ratings</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" id="footerleft">
+            <img src="assets/images/copyright.svg" alt="copyright icon">
+            <p>Bun Bun Bakeshop</p>
+        </a>
+        <div id="footerright">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+			<div id="footersocials">
+				<img 
+                    src="assets/images/facebook.svg" 
+                    alt="Facebook logo. This will take you to the Facebook page for Bun Bun Bakeshop."
+                >
+				<img 
+                    src="assets/images/instagram.svg" 
+                    alt="Instagram logo. This will take you to the Instagram page for Bun Bun Bakeshop."
+                >
+				<img 
+                    src="assets/images/snapchat.svg" 
+                    alt="Snapchat logo. This will take you to the Snapchat profile for Bun Bun Bakeshop."
+                >
+				<img 
+                    src="assets/images/twitter.svg" 
+                    alt="Twitter logo. This will take you to the Twitter page for Bun Bun Bakeshop."
+                >
+			</div>
+        </div>
+    </footer>
+    <script src="script.js" async></script> 
+</body>
+</html>

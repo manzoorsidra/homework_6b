@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bun Bun Bakeshop</title>
+	<link rel="stylesheet" href="styles.css">
+	<!-- linking stylesheet to get Inter font -->
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+
+<body>
+	
+	<!-- Navigation Bar -->
+	<header>
+		<nav>
+			<div id="logo">
+				<a href="index.html">
+					<img 
+						src="assets/images/Logo.png" 
+						alt="The Bun Bun Bakeshop logo. Clicking this will take you back to the homepage"
+					>
+				</a>
+			</div>
+			<div id="navtitles">
+				<!-- <p id = "cartCounter3"></p> -->
+				<a href="browseflavors.html">Browse Flavors</a>
+				<a href="#AboutUs">About Us</a>
+				<a href="#ContactUs">Contact Us</a>
+				<a href="#Careers">Careers</a>
+				<a href="#Favorites" class="iconlabels">
+					<span>
+						Favorites
+						<img 
+							src="assets/icons/favorites.svg" 
+							alt="heart icon. Clicking this will take you to the favorites page."
+						>
+					</span>
+				</a>
+				<a href="cart.html" class="iconlabels cartIconElement">
+					<span>
+						Cart 
+					</span>
+						<div class = "cartIcon">
+							<img 
+								src="assets/icons/cart.svg" 
+								alt="shopping cart icon. Clicking this will 
+								take you to the cart page."
+							>
+							<div class = "cartNumberDiv">
+								<span class ="disp" id ="cartCounter">0</span>
+							</div>
+						</div>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Banner -->
+	<div id="banner">
+		<h1>Bun Bun<br>Bakeshop</h1>
+		<p>The best cinnamons in town!</p>
+		<button 
+			type="button" 
+			onclick="window.location.href='browseflavors.html'"
+		>
+			Browse Flavors
+		</button>
+	</div>
+
+	<!-- Flavor of the Week -->
+	<div class="homepagesection" id="flavoroftheweek">
+		<h3>Flavor of the Week</h3>
+		<div class="sidebysidecontent">
+			<img 
+				src="assets/images/flavoroftheweek.png" 
+				alt="image of pumpkin spice cinnamon roll"
+				>
+			<div class="sidebysidetext" id="flavortext">
+				<div id="tag">Fall Favorite</div>
+				<h4>Pumpkin Spice</h4>
+				<p>Fall is here which means our famous pumpkin spice roll is back. 
+					Treat yourself this fall, you deserve it!</p>
+				<button class= "secondarybutton" type="button">Learn More</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Follow Us -->
+	<div class="homepagesection" id="followus">
+		<h3>Follow Us</h3>
+		<p>
+			Stay up to date on new flavor 
+			releases, giveaways, discount announcements and much more!
+		</p>
+		<div id="socials">
+			<img 
+				src="assets/images/facebook.svg" 
+				alt="Facebook Logo. This will take you to the 
+				Facebook page for Bun Bun Bakeshop."
+			>
+			<img 
+				src="assets/images/instagram.svg" 
+				alt="Instagram Logo. This will take you to the 
+				Instagram page for Bun Bun Bakeshop."
+			>
+			<img 
+				src="assets/images/snapchat.svg" 
+				alt="Snapchat Logo. This will take you to the 
+				Snapchat profile for Bun Bun Bakeshop."
+			>
+			<img 
+				src="assets/images/twitter.svg" 
+				alt="Twitter Logo. This will take you to the 
+				Twitter page for Bun Bun Bakeshop."
+			>
+		</div>		
+	</div>
+
+	<!-- Citywide Delivery -->
+	<div class= "homepagesection sidebysidecontent" id="citywidedelivery">
+		<img 
+			src="assets/images/citywidedelivery.png" 
+			alt="image of a Bun Bun Bakeshop delivery bag"
+		>
+		<div class="sidebysidetext">
+			<h4>Citywide Delivery</h4>
+			<p>
+				Can’t come to us? No problem! 
+				We’ll be at your door with freshly made rolls in no time! 
+				Just let us know your address and leave the rest to us.
+			</p>
+			<p>We have Pittsburgh covered.</p>
+			<button class= "secondarybutton" type="button">Order Now</button>
+		</div>
+	</div>
+
+	<!-- Our shop -->
+	<div class= "homepagesection sidebysidecontent" id="ourshop">
+		<div class="sidebysidetext">
+			<h4>Our Shop</h4>
+			<p>
+				Want the rolls and the vibe? 
+				Visit us at our homebase store.
+			</p>
+			<p>
+				Located at the heart of Pittsburgh, 
+				we’re the perfect place to hang out, 
+				meet friends and take pictures for the gram.
+			</p>
+			<button class= "secondarybutton" type="button">Get Directions</button>
+		</div>
+		<img 
+			src="assets/images/ourshop.png" 
+			alt="image of the Bun Bun Bakeshop shop in Pittsburgh"
+		>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<a href="#" id="footerleft">
+			<img src="assets/images/copyright.svg" alt="copyright icon">
+			<p>Bun Bun Bakeshop</p>
+		</a>
+		<div id="footerright">
+			<a href="#">FAQ</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Terms & Conditions</a>
+			<div id="footersocials">
+				<img 
+					src="assets/images/facebook.svg" 
+					alt="Facebook logo. This will take you to the 
+					Facebook page for Bun Bun Bakeshop."
+				>
+				<img 
+					src="assets/images/instagram.svg" 
+					alt="Instagram logo. This will take you to the 
+					Instagram page for Bun Bun Bakeshop."
+				>
+				<img 
+					src="assets/images/snapchat.svg" 
+					alt="Snapchat logo. This will take you to the 
+					Snapchat profile for Bun Bun Bakeshop."
+				>
+				<img 
+					src="assets/images/twitter.svg" 
+					alt="Twitter logo. This will take you to the 
+					Twitter page for Bun Bun Bakeshop."
+				>
+			</div>
+		</div>
+	</footer>
+	<script src="script.js" async></script>
+	
+</body>
+</html>

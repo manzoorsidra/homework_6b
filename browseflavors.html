@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Flavors</title>
+    <link rel="stylesheet" href="styles.css">
+	<!-- linking stylesheet to get Inter font -->
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+	<header>
+		<nav>
+			<div id="logo">
+				<a href="index.html">
+                    <img 
+                        src="assets/images/Logo.png" 
+                        alt="The Bun Bun Bakeshop logo. Clicking this will take you back to the homepage"
+                    >
+                </a>
+			</div>
+			<div id="navtitles">
+				<a href="browseflavors.html"><b>Browse Flavors</b></a>
+				<a href="#AboutUs">About Us</a>
+				<a href="#ContactUs">Contact Us</a>
+				<a href="#Careers">Careers</a>
+				<a href="#Favorites" class="iconlabels">
+                    <span>
+                        Favorites
+                        <img 
+                            src="assets/icons/favorites.svg" 
+                            alt="heart icon. Clicking this will take you to the favorites page."
+                        >
+                    </span>
+                </a>
+				<a href="cart.html" class="iconlabels cartIconElement">
+					<span>
+						Cart 
+					</span>
+						<div class = "cartIcon">
+							<img 
+								src="assets/icons/cart.svg" 
+								alt="shopping cart icon. Clicking this will 
+								take you to the cart page."
+							>
+							<div class = "cartNumberDiv">
+								<span class ="disp" id = "cartCounter2">0</span>
+							</div>
+						</div>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+    <!-- Flavor Listings -->
+    <div class="pagecontent">
+
+        <h2 class="pagetitle">Browse Flavors</h2>
+        
+        <!-- Row 1 of flavor listings -->
+        <div class="row" id="row1">
+            <!-- Original -->
+            <div class="flavorlisting">
+                <div class="flavorimage">
+                    <a class="flavor" href="flavordetail.html">
+                        <img src="assets/images/original.png" alt="original cinnamon roll">
+                    </a>
+                    <a class="addbutton" href="#">
+                        <img 
+                            src="assets/images/add.svg" 
+                            alt="Add button. This will open the quick buy overlay."
+                        >
+                    </a>
+                </div>
+                <div class="flavortitle">
+                    <a href="flavordetail.html"><h5>Original</h5></a>
+                    <h5>$ 1.99</h5>
+                </div>
+                <div class="ratings">
+                    <div class="stars">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/stargrey.svg" alt="4 star rating">
+                    </div>
+                    <h6>1219 Ratings</h6>
+                </div>
+            </div>
+            <!-- Blackberry -->
+            <div class="flavorlisting">
+                <div class="flavorimage">
+                    <a class="flavor" href="#">
+                        <img 
+                            src="assets/images/blackberry.png" 
+                            alt="blackberry cinnamon roll"
+                        >
+                    </a>
+                    <a class="addbutton" href="#">
+                        <img 
+                            src="assets/images/add.svg" 
+                            alt="Add button. This will open the quick buy overlay."
+                        >
+                    </a>
+                </div>
+                <div class="flavortitle">
+                    <h5>Blackberry</h5>
+                    <h5>$ 1.99</h5>
+                </div>
+                <div class="ratings">
+                    <div class="stars">
+                        <img src="assets/images/starpink.svg" alt="3 star rating">
+                        <img src="assets/images/starpink.svg" alt="3 star rating">
+                        <img src="assets/images/starpink.svg" alt="3 star rating">
+                        <img src="assets/images/stargrey.svg" alt="3 star rating">
+                        <img src="assets/images/stargrey.svg" alt="3 star rating">
+                    </div>
+                    <h6>198 Ratings</h6>
+                </div>
+            </div>
+            <!-- Pumpkin Spice -->
+            <div class="flavorlisting">
+                <div class="flavorimage">
+                    <a class="flavor" href="#">
+                        <img 
+                            src="assets/images/pumpkinspice.png" 
+                            alt="pumpkin spice cinnamon roll"
+                        >
+                    </a>
+                    <a class="addbutton" href="#">
+                        <img 
+                            src="assets/images/add.svg" 
+                            alt="Add button. This will open the quick buy overlay."
+                        >
+                    </a>
+                </div>
+                <div class="flavortitle">
+                    <h5>Pumpkin Spice</h5>
+                    <h5>$ 2.99</h5>
+                </div>
+                <div class="ratings">
+                    <div class="stars">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/stargrey.svg" alt="4 star rating">
+                    </div>
+                    <h6>219 Ratings</h6>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Row 2 of flavor listings -->
+        <div class="row">
+            <!-- Walnut -->
+            <div class="flavorlisting">
+                <div class="flavorimage">
+                    <a class="flavor" href="#">
+                        <img src="assets/images/walnut.png" 
+                        alt="walnut cinnamon roll">
+                    </a>
+                    <a class="addbutton" href="#">
+                        <img 
+                            src="assets/images/add.svg" 
+                            alt="Add button. This will open the quick buy overlay."
+                        >
+                    </a>
+                </div>
+                <div class="flavortitle">
+                    <h5>Walnut</h5>
+                    <h5>$ 1.99</h5>
+                </div>
+                <div class="ratings">
+                    <div class="stars">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/stargrey.svg" alt="4 star rating">
+                    </div>
+                    <h6>467 Ratings</h6>
+                </div>
+            </div>
+            <!-- Original (GF) -->
+            <div class="flavorlisting">
+                <div class="flavorimage">
+                    <a class="flavor" href="#">
+                        <img src="assets/images/original.png" 
+                        alt="original gluten free cinnamon roll">
+                    </a>
+                    <a class="addbutton" href="#">
+                        <img 
+                            src="assets/images/add.svg" 
+                            alt="Add button. This will open the quick buy overlay."
+                        >
+                    </a>
+                </div>
+                <div class="flavortitle">
+                    <h5>Original (Gluten Free)</h5>
+                    <h5>$ 1.99</h5>
+                </div>
+                <div class="ratings">
+                    <div class="stars">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/starpink.svg" alt="4 star rating">
+                        <img src="assets/images/stargrey.svg" alt="4 star rating">
+                    </div>
+                    <h6>134 Ratings</h6>
+                </div>
+            </div>
+            <!-- Caramel Pecan -->
+            <div class="flavorlisting">
+                <div class="flavorimage">
+                    <a class="flavor" href="#">
+                        <img src="assets/images/caramelpecan.png" 
+                        alt="caramel pecan cinnamon roll">
+                    </a>
+                    <a class="addbutton" href="#">
+                        <img 
+                            src="assets/images/add.svg" 
+                            alt="Add button. This will open the quick buy overlay."
+                        >
+                    </a>
+                </div>
+                <div class="flavortitle">
+                    <h5>Caramel Pecan</h5>
+                    <h5>$ 2.99</h5>
+                </div>
+                <div class="ratings">
+                    <div class="stars">
+                        <img src="assets/images/starpink.svg" alt="5 star rating">
+                        <img src="assets/images/starpink.svg" alt="5 star rating">
+                        <img src="assets/images/starpink.svg" alt="5 star rating">
+                        <img src="assets/images/starpink.svg" alt="5 star rating">
+                        <img src="assets/images/starpink.svg" alt="5 star rating">
+                    </div>
+                    <h6>283 Ratings</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" id="footerleft">
+            <img src="assets/images/copyright.svg" alt="copyright icon">
+            <p>Bun Bun Bakeshop</p>
+        </a>
+        <div id="footerright">
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+			<div id="footersocials">
+				<img 
+                    src="assets/images/facebook.svg" 
+                    alt="Facebook logo. This will take you to the 
+                    Facebook page for Bun Bun Bakeshop."
+                >
+				<img 
+                    src="assets/images/instagram.svg" 
+                    alt="Instagram logo. This will take you to the 
+                    Instagram page for Bun Bun Bakeshop."
+                >
+				<img 
+                    src="assets/images/snapchat.svg" 
+                    alt="Snapchat logo. This will take you to the 
+                    Snapchat profile for Bun Bun Bakeshop."
+                >
+				<img 
+                    src="assets/images/twitter.svg" 
+                    alt="Twitter logo. This will take you to the 
+                    Twitter page for Bun Bun Bakeshop."
+                >
+			</div>
+        </div>
+    </footer>
+    <script src="script.js" async></script>
+    
+</body>
+</html>
