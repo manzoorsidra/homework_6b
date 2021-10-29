@@ -28,9 +28,11 @@ if(cartBtnAvailable){
 
 
 //   adding selected radio value to local Storage. Need to do for loop and += to add all values 
-    var item = [glazeSelectedValue, quantitySelectedValue];
-    localStorage.setItem("cartItems", item);
+    var item = [`${glazeSelectedValue[0]}${quantitySelectedValue}`];
+    items.push(item);
+    localStorage.setItem("cartItems", items);
     console.log(localStorage.getItem('cartItems'));
+
     // console.log(cartItems);
     // items.push(item);
     // console.log("Glaze Selected Value = " + item[0]);
@@ -76,6 +78,18 @@ function updateCartOnAllPages(){
         var cartCount4 = document.getElementById("cartCounter4");
         cartCount4.innerHTML = cartCountLS;
     }
+
+
+
+    let LSCartItems = localStorage.getItem('cartItems');
+    console.log(typeof(LSCartItems));
+    LSCartItems =LSCartItems.split(",");
+    console.log(LSCartItems);
+
+
+    LSCartItems.forEach(item => {
+        addProductToCart(item);
+    });
 };
 
 
@@ -123,7 +137,29 @@ document.body.addEventListener('change', function(e){
 window.onload = updateCartOnAllPages();
 
 // ////Need to format everything here + use this create element on "add to cart" + window.onload
-var cartItemsContainer = document.getElementsByClassName("cartItems");
+
+
+
+
+var checkoutButton = document.getElementById('testBtn');
+if(checkoutButton){
+    checkoutButton.addEventListener("click", function(){
+
+    });
+
+}
+
+
+
+function addProductToCart(item){
+    let itemType = item[0];
+    // console.log(item.substring);
+    let itemQty = item.substring(1);
+
+
+    const itemTypes = {V: "Vanilla-Milk", D: "Double-Chocolate", N: "No-Glaze", S: "Sugar-Milk"};
+
+    var cartItemsContainer = document.getElementsByClassName("cartItems");
 
 
     var productContainerDiv = document.createElement("div");
@@ -172,7 +208,8 @@ var cartItemsContainer = document.getElementsByClassName("cartItems");
     var quantityDropdownText = document.createElement("p");
     quantityDropdownText.className = "dropdownText";
     // //////////////Change this based on items[1]
-    quantityDropdownText.innerHTML = "3";
+    // console.log('quantityDropdownText.value');
+    quantityDropdownText.innerHTML = itemQty;
     // ///////////////////////////////////////////
     var quantityDropdownArrow = document.createElement("img");
     quantityDropdownArrow.className = "dropdownArrow";
@@ -189,7 +226,7 @@ var cartItemsContainer = document.getElementsByClassName("cartItems");
     var glazeDropdownText = document.createElement("p");
     glazeDropdownText.className = "dropdownText";
     // /////////////////Change this based on items[0]
-    glazeDropdownText.innerHTML = "Vanilla-Milk";
+    glazeDropdownText.innerHTML = itemTypes[itemType];
     ///////////////////////////////////////////
     var glazeDropdownArrow = document.createElement("img");
     glazeDropdownArrow.className = "dropdownArrow";
@@ -225,20 +262,12 @@ productContainerDiv.appendChild(itemDetailsDiv);
 
 
 
-var checkoutButton = document.getElementById('testBtn');
-if(checkoutButton){
-    checkoutButton.addEventListener("click", function(){
-        var cartItemsDiv = document.getElementById("cartDiv");
-        cartItemsDiv.appendChild(productContainerDiv);
-        console.log("New product added!");
-    });
+    var cartItemsDiv = document.getElementById("cartDiv");
+    console.log(cartItemsDiv);
+    cartItemsDiv.appendChild(productContainerDiv);
+    console.log("New product added!");
 
 }
-
-
-
-
-
 
 
 
